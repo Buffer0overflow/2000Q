@@ -1,5 +1,5 @@
 /*
-Binary Search Algorithm
+Q8: Binary Search Algorithm
 */
 
 #include <stdio.h>

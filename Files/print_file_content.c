@@ -1,5 +1,5 @@
 /*
-Read A File And Display Its Contents
+Q5: Read A File And Display Its Contents
 */
 
 #include <stdio.h>
@@ -17,7 +17,8 @@ int main(int argc, char const *argv[])
     while (!feof(fp))
     {
         /*
-        check return value of fgets so we can exit loop before last line printed twice.
+        check return value of fgets so we can exit loop before last line printed twice. OR
+        we should check feof() after fgets call again!.
         */
         if (fgets(buffer,4095,fp))
         printf("%s",buffer);

@@ -1,5 +1,5 @@
 /*
-Find The Second Lowest Number In An Array
+Q2: Find The Second Lowest Number In An Array
 */
 
 #include <stdio.h>

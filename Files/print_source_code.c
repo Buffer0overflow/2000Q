@@ -1,5 +1,5 @@
 /*
-print source code on screen
+Q6: print source code on screen
 */
 
 #include <stdio.h>

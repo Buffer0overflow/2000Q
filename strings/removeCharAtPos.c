@@ -1,5 +1,5 @@
 /*
-Remove a character from a string at a specified position
+Q11: Remove a character from a string at a specified position
 */
 
 #include <stdio.h>

@@ -1,5 +1,5 @@
 /*
-Removing all occurrences of a character from a string | C Programming Example
+Q10: Removing all occurrences of a character from a string | C Programming Example
 */
 
 #include <stdio.h>

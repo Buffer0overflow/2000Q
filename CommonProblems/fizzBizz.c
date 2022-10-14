@@ -1,5 +1,5 @@
 /*
-Fizz Buzz Problem
+Q3: Fizz Buzz Problem
 */
 
 #include <stdio.h>

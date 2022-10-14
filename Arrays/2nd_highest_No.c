@@ -1,5 +1,5 @@
 /*
-Find The Second Highest Number In An Array
+Q1: Find The Second Highest Number In An Array
 */
 
 #include <stdio.h>
