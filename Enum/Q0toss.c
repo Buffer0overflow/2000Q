@@ -1,5 +1,5 @@
 /*
-Coin Toss Simulator
+Q15: Coin Toss Simulator
 */
 #include <stdio.h>
 #include <time.h>
