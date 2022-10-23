@@ -17,7 +17,10 @@ int main(int argc, char const *argv[])
     int line_counter = 1;
     char buffer[MAX_SIZE];
     char temp_buffer[MAX_SIZE];
-    FILE *fp = fopen("G:\\read_line.txt","r");
+    char fileName[MAX_SIZE];
+    printf("Enter file name:");
+    scanf("%s",fileName);
+    FILE *fp = fopen(fileName,"r");
     FILE *fp_tmp = fopen("G:\\temp.txt","w");
     if (NULL == fp || NULL == fp_tmp)
     {
@@ -30,7 +33,8 @@ int main(int argc, char const *argv[])
         
             if ( line_counter == replace_line_num)
                 {
-                    fputs("XXXXXXXXXXXXX\n",fp_tmp);
+                    fputs(fileName,fp_tmp);
+                    fputc('\n',fp_tmp);
                     fputs(buffer,fp_tmp);
                 }
             else 
@@ -40,8 +44,8 @@ int main(int argc, char const *argv[])
 
     fclose(fp);
     fclose(fp_tmp);
-    remove("G:\\read_line.txt");
-    rename("G:\\temp.txt","G:\\read_line.txt");
+    remove(fileName);
+    rename("G:\\temp.txt",fileName);
     return 0;
 }
 
