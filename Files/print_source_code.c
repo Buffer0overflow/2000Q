@@ -7,7 +7,7 @@ Q6: print source code on screen
 int main(int argc, char const *argv[])
 {
     FILE *fp = fopen(__FILE__,"r");
-    char c;
+    int c;
     while( (c = getc(fp)) != EOF)
     {
        putchar(c);
