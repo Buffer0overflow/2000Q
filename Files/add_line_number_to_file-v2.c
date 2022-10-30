@@ -31,15 +31,9 @@ int main(int argc, char const *argv[])
     {
         fgets(buffer,BUFSIZ,fp);
         if(feof(fp)) break;
-        int buffer_length = strlen(buffer);
-        int length = snprintf( NULL, 0, "%d", line_number );
-        char *num_buffer = malloc(length + buffer_length + 2); 
-        snprintf( num_buffer, length + 2, "%d ", line_number);
+        fprintf(fp_write,"%d %s",line_number,buffer);
         line_number++;
-        strcat(num_buffer,buffer);
-        fputs(num_buffer,fp_write);
-        printf("%s\n",num_buffer);
-        free(num_buffer);
+        
     }
 
 

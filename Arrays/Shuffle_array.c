@@ -34,9 +34,9 @@ void shuffle_array(int arr[],int length)
     srand( time(0) );
     int temp,swap_index;
 
-    swap_index = rand() % length ;
     for (int i = 0 ; i < length ; i++)
     {
+        swap_index = rand() % length ;
         temp = arr[i];
         arr[i] = arr[swap_index];
         arr[swap_index] = temp;
