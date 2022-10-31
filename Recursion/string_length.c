@@ -15,6 +15,6 @@ int main(int argc, char const *argv[])
 }
 int my_strlen(char *s)
 {
-    if (*s) return 1 + my_strlen(++s);
+    if (*s) return 1 + my_strlen(++s); // advance the pointer first then call the func again
     else return 0;
 }
