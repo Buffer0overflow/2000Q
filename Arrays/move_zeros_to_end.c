@@ -8,11 +8,11 @@ void move_zeros(int arr[], int length);
 
 int main(int argc, char const *argv[])
 {
-    int arr[] = {0, 1, 0, 5, 6, 9, 0, 7, 0, 1};
-    move_zeros(arr, 10);
+    int array[] = {0, 1, 0, 5, 6, 9, 0, 7, 0, 1};
+    move_zeros(array, 10);
     for (int i = 0; i < 10; i++)
     {
-        printf("%d ", arr[i]);
+        printf("%d ", array[i]);
     }
     return 0;
 }
